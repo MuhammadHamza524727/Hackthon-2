@@ -304,7 +304,7 @@ export default function ProductGallery() {
           {products.map((product) => (
             <div key={product.id} className="bg-white  p-4 w-[348px]">
               <Link href="/productDetailCard">
-                <img
+                <Image
                   src={product.image}
                   alt={product.name}
                   className="w-[348px] h-[348px] object-cover  mb-4"

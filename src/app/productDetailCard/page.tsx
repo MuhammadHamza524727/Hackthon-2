@@ -7,7 +7,7 @@ const ProductDetailCard = () => {
       <div className="w-full lg:w-1/2 flex justify-center">
         <Image
           src="/images/Rectangle2.png"
-          alt="Nike Air Force 1 PLT.AF.ORM"
+          alt="Nike Air "
           width={500}
           height={500}
           className="object-contain"
@@ -22,10 +22,10 @@ const ProductDetailCard = () => {
         </h1>
         <p className="text-gray-600">
           Turn style on its head with this crafted take on the Air Jordan 1 Mid.
-          Its "inside out"–inspired construction, including unique layering and
-          exposed foam accents, ups the ante on this timeless Jordan Brand
+          Its inside out inspired construction including unique layering and
+          exposed foam accents ups the ante on this timeless Jordan Brand
           silhouette. Details like the deco stitching on the Swoosh add coveted
-          appeal, while the unexpected shading, rich mixture of materials, and
+          appeal while the unexpected shading rich mixture of materials and
           aged midsole aesthetic give this release an artisan finish.
         </p>
         <p className="text-2xl font-bold">₹ 8,695.00</p>
@@ -37,7 +37,7 @@ const ProductDetailCard = () => {
               width={22.36}
               height={16.3}
             />
-          </span>{" "}
+          </span>
           Add To Cart
         </button>
       </div>

@@ -32,12 +32,12 @@ const CategoryLinks = () => {
           </ul>
         </div>
         <div>
-          <h2 className="font-bold text-lg mb-4">Kids'</h2>
+          <h2 className="font-bold text-lg mb-4">Kids</h2>
           <ul className="space-y-2 text-gray-600">
             <li>Infant & Toddler Shoes</li>
-            <li>Kids' Shoes</li>
-            <li>Kids' Jordan Shoes</li>
-            <li>Kids' Basketball Shoes</li>
+            <li>Kids Shoes</li>
+            <li>Kids Jordan Shoes</li>
+            <li>Kids Basketball Shoes</li>
           </ul>
         </div>
       </div>

@@ -16,7 +16,7 @@ const Essential = () => {
             className="object-cover rounded-md"
           />
           <button className="absolute  bottom-4 left-4 bg-white text-sm px-4 py-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition">
-            Men's
+            Men s
           </button>
         </div>
         <div className="relative group">
@@ -29,7 +29,7 @@ const Essential = () => {
             className="object-cover rounded-md"
           />
           <button className="absolute bottom-4 left-4 bg-white text-sm px-4 py-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition">
-            Women's
+            Women s
           </button>
         </div>
         <div className="relative group">
@@ -42,7 +42,7 @@ const Essential = () => {
             className="object-cover rounded-md"
           />
           <button className="absolute bottom-4 left-4 bg-white text-sm px-4 py-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition">
-            Kids'
+            Kids
           </button>
         </div>
       </div>

@@ -43,7 +43,7 @@ export default function Home() {
       <div className="flex justify-end items-center ">
         <div className="w-full gap-4 flex justify-end items-center mb-6 ">
           <h2 className=" sm:hidden md:block text-lg font-semibold">
-            Shop Men's
+            Shop Men s
           </h2>
           <h2 className=" md:hidden sm:block text-lg font-semibold">
             Mix Collection
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
 
         <div className=" sm:hidden md:flex w-full gap-4  flex justify-end  items-center mb-6">
-          <h2 className="text-lg font-semibold">Shop Women's</h2>
+          <h2 className="text-lg font-semibold">Shop Women s</h2>
           <button className="text-gray-600 hover:text-black rounded-full w-12 h-12 flex items-center justify-center  bg-gray-200">
             <span>
               <Image
