@@ -8,7 +8,7 @@ const Essential = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="relative group">
           <Image
-            src="/images/mens-essentials.jpg"
+            src="/images/mens-essentials.png"
             alt="Men's Essentials"
             layout="responsive"
             width={500}
@@ -21,7 +21,7 @@ const Essential = () => {
         </div>
         <div className="relative group">
           <Image
-            src="/images/womens-essentials.jpg"
+            src="/images/womens-essentials.png"
             alt="Women's Essentials"
             layout="responsive"
             width={500}
@@ -34,7 +34,7 @@ const Essential = () => {
         </div>
         <div className="relative group">
           <Image
-            src="/images/kids-essentials.jpg"
+            src="/images/kids-essentials.png"
             alt="Kids' Essentials"
             layout="responsive"
             width={500}

@@ -6,7 +6,7 @@ const Featured = () => {
     <div className="w-full px-4">
       <h1 className="p-x-2">Featured</h1>
       <Image
-        src="/images/menimage.png"
+        src="/images/menImage.png"
         alt="men"
         width={1344}
         height={700}
