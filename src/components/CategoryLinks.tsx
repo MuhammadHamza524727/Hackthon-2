@@ -2,8 +2,8 @@ import React from "react";
 
 const CategoryLinks = () => {
   return (
-    <div className="container mx-auto sm:px-6 md:px-48 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-left">
+    <div className=" mx-auto sm:px-6 md:px-48 py-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
         <div>
           <h2 className="font-bold text-lg mb-4">Icons</h2>
           <ul className="space-y-2 text-gray-600">

@@ -4,8 +4,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-black  text-gray-100">
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm">
+      <div className=" mx-auto px-4 py-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
           <div className="space-y-2 text-sm">
             <p>FIND A STORE</p>
             <p>BECOME A MEMBER</p>
@@ -36,13 +36,13 @@ const Footer = () => {
           <Image src="/images/link.png" alt="link." width={337} height={37} />
         </div>
         <div className="mt-6 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between  items-center">
-          <div className="flex items-center space-x-4">
+          <div className="sm:flex-col md:flex-row  flex  items-center space-x-4">
             <span className="text-gray-400">India</span>
-            <span className="text-gray-600 text-sm">
+            <span className="text-gray-600 sm:text-[10px] md:text-sm">
               © 2023 Nike, Inc. All Rights Reserved
             </span>
           </div>
-          <div className="flex md:ml-72  space-x-6">
+          <div className="flex md:ml-72 sm:hidden md:flex  space-x-6">
             <a href="#" className="hover:text-gray-600 text-sm">
               Guides
             </a>

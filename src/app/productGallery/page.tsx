@@ -31,7 +31,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle2.png",
     },
     {
-      id: 3,
+      id: 4,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -40,7 +40,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle3.png",
     },
     {
-      id: 3,
+      id: 5,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -49,7 +49,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle4.png",
     },
     {
-      id: 3,
+      id: 6,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -58,7 +58,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle5.png",
     },
     {
-      id: 3,
+      id: 7,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -67,7 +67,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle6.png",
     },
     {
-      id: 3,
+      id: 8,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -76,7 +76,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle7.png",
     },
     {
-      id: 3,
+      id: 9,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -85,7 +85,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle8.png",
     },
     {
-      id: 3,
+      id: 10,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -94,7 +94,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle9.png",
     },
     {
-      id: 3,
+      id: 11,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -103,7 +103,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle10.png",
     },
     {
-      id: 3,
+      id: 12,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -112,7 +112,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle11.png",
     },
     {
-      id: 3,
+      id: 13,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -121,7 +121,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle12.png",
     },
     {
-      id: 3,
+      id: 14,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -130,7 +130,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle13.png",
     },
     {
-      id: 3,
+      id: 15,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -139,7 +139,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle14.png",
     },
     {
-      id: 3,
+      id: 16,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -148,7 +148,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle15.png",
     },
     {
-      id: 3,
+      id: 17,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -157,7 +157,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle16.png",
     },
     {
-      id: 3,
+      id: 18,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -166,7 +166,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle17.png",
     },
     {
-      id: 3,
+      id: 19,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -175,7 +175,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle18.png",
     },
     {
-      id: 3,
+      id: 20,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -184,7 +184,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle19.png",
     },
     {
-      id: 3,
+      id: 21,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -193,7 +193,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle20.png",
     },
     {
-      id: 3,
+      id: 22,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -202,7 +202,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle21.png",
     },
     {
-      id: 3,
+      id: 23,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -211,7 +211,7 @@ export default function ProductGallery() {
       image: "/images/Rectangle22.png",
     },
     {
-      id: 3,
+      id: 24,
       label: "Just In",
       name: "Nike Air Force 1 PLT.AF.ORM",
       category: "Women's Shoes",
@@ -307,6 +307,8 @@ export default function ProductGallery() {
                 <Image
                   src={product.image}
                   alt={product.name}
+                  width={348}
+                  height={348}
                   className="w-[348px] h-[348px] object-cover  mb-4"
                 />
               </Link>
@@ -315,7 +317,7 @@ export default function ProductGallery() {
                 {product.label}
               </p>
 
-              <h3 className="font-bold text-lg">{product.name}</h3>
+              <h3 className="font-bold text-md text-black ">{product.name}</h3>
               <p className="text-gray-600 text-sm">{product.category}</p>
               <p className="text-gray-400 text-sm">{product.color}</p>
               <p className="text-black font-semibold">{product.price}</p>

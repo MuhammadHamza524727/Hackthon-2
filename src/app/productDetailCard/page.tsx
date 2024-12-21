@@ -38,7 +38,9 @@ const ProductDetailCard = () => {
               height={16.3}
             />
           </span>
+          <a href="/login">
           Add To Cart
+          </a>
         </button>
       </div>
     </div>

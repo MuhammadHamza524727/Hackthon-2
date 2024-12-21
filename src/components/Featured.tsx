@@ -4,7 +4,7 @@ import React from "react";
 const Featured = () => {
   return (
     <div className="w-full px-4">
-      <h1 className="p-x-2">Featured</h1>
+      <h1 className="p-x-2 text-xl sm:font-medium md:font-normal">Featured</h1>
       <Image
         src="/images/menImage.png"
         alt="men"
@@ -13,7 +13,7 @@ const Featured = () => {
         className="sm:h-auto sm:flex md:block sm:justify-center md:justify-normal md:h-[700px] w-auto"
       />
       <div className="flex flex-col items-center justify-center text-center py-7 px-4   bg-white">
-        <h1 className="text-5xl md:text-5xl font-bold my-4">
+        <h1 className="text-2xl md:text-5xl font-bold my-4">
           STEP INTO WHAT FEELS GOOD
         </h1>
         <p className=" max-w-xl leading-relaxed">

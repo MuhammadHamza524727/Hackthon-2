@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Jordanspring = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className=" mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-6">Don&apos;t Miss</h1>
       <div className="w-full">
         <Image
@@ -16,7 +16,7 @@ const Jordanspring = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center text-center py-7 px-4   bg-white">
-        <h1 className="text-5xl md:text-5xl font-bold my-4">
+        <h1 className="text-2xl md:text-5xl font-bold my-4">
           FLIGHT ESSENTIALS
         </h1>
         <p className=" max-w-xl leading-relaxed">

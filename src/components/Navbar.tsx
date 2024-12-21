@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { CiMenuFries } from "react-icons/ci";
 import {
   Sheet,
   SheetContent,
@@ -13,35 +14,61 @@ import {
 const Navbar = () => {
   return (
     <div className="w-full font-roboto bg-customGray  shadow-sm ">
-      <div className="container mx-auto  px-4 flex  justify-between items-center md:py-3    ">
-        <div className="flex items-center">
+      <div className=" mx-auto  px-4 flex  justify-between items-center md:py-3    ">
+        <div className="flex items-center sm:py-2 md:py-0 ">
+          <a href="/">
           <Image
-            src="/images/jordan-logo.png"
+            src="/images/logo2.png"
             alt="Jordan Logo"
             width={24}
             height={24}
-            className="h-6 w-auto"
           />
+          </a>
         </div>
-        <div className="hidden md:flex space-x-2 text-sm text-gray-700 font-medium">
-          <Link href="/find-store">Find a Store</Link>
+        <div className="hidden md:flex space-x-2 text-sm text-gray-700 font-medium ">
+          <Link href="/checkout">Find a Store</Link>
           <h1>|</h1>
-          <Link href="/help">Help</Link>
+          <Link href="/contactus">Help</Link>
           <h1>|</h1>
-          <Link href="/join-us">Join Us</Link>
+          <Link href="/joinus"  className="hover:text-gray-400">Join Us</Link>
           <h1>|</h1>
-          <Link href="/sign-in">Sign In</Link>
+          <Link href="/login"  className="hover:text-gray-400">Sign In</Link>
         </div>
 
         <div className="block md:hidden   ">
           <Sheet>
-            <SheetTrigger>open</SheetTrigger>
+            <SheetTrigger><CiMenuFries /></SheetTrigger>
             <SheetContent>
+            
               <SheetHeader>
-                <SheetTitle>Are you absolutely sure?</SheetTitle>
+                
+                <SheetTitle>
+                <div className="flex gap-1  items-center py-2 ">
+                  <div className="flex items-center  ">
+                    <Image
+                      src="/images/logo2.png"
+                      alt="Jordan Logo"
+                      width={24}
+                      height={24}
+                    />
+                  </div>
+                  <h1 className="text-md font-roboto ">Nike</h1>
+                  </div>
+                </SheetTitle>
                 <SheetDescription>
-                  This action cannot be undone. This will permanently delete
-                  your account and remove your data from our servers.
+                  <div className="md:hidden  sm:flex   text-start  flex-col space-x-2 py-2 gap-5 text-sm text-gray-700 font-medium">
+                    <Link href="/login" className="ml-2">
+                      Sign In
+                    </Link>
+
+                    <Link href="/checkout  " className="ml-2">
+                      Find a Store
+                    </Link>
+
+                    <Link href="/contactus">Help</Link>
+
+                    <Link href="/joinus">Join Us</Link>
+                  </div>
                 </SheetDescription>
               </SheetHeader>
             </SheetContent>
@@ -82,7 +109,7 @@ const Navbar = () => {
               <input
                 type="text"
                 placeholder="Search"
-                className="ml-1 bg-transparent focus:outline-none text-sm  font-bold text-gray-600 placeholder-gray-300"
+                className="ml-1 bg-transparent focus:outline-none text-sm  font-medium text-gray-600 placeholder-gray-300"
               />
             </div>
             <Image
@@ -92,6 +119,7 @@ const Navbar = () => {
               height={24}
               className="h-5 w-auto "
             />
+            <a href="/cart">
             <Image
               src="/images/marketplace.png"
               alt="Jordan Logo"
@@ -99,6 +127,7 @@ const Navbar = () => {
               height={24}
               className="h-6 w-auto"
             />
+            </a>
           </div>
         </div>
       </nav>

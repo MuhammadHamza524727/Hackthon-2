@@ -39,9 +39,9 @@ const ProductGrid = () => {
               className="w-full h-auto object-contain"
             />
             <div className="lg:flex  lg:items-center lg:gap-36 ">
-              <div className="flex justify-start flex-col items-start">
+              <div className="flex justify-start flex-col sm:items-center md:items-start ">
                 <h3 className="text-sm font-semibold">{product.name}</h3>
-                <p className="text-sm text-gray-600">{product.category}</p>
+                <p className="text-sm  text-gray-600">{product.category}</p>
               </div>
               <p className="text-sm font-medium">{product.price}</p>
             </div>
