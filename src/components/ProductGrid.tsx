@@ -24,7 +24,7 @@ const ProductGrid = () => {
   ];
 
   return (
-    <section className="px-4 md:px-8 lg:px-16 py-8">
+    <section className="mx-auto my-0 max-w-screen-2xl px-4 md:px-8 lg:px-16 py-8">
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {products.map((product, index) => (
           <div

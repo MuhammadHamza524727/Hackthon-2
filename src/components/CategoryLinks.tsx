@@ -2,7 +2,7 @@ import React from "react";
 
 const CategoryLinks = () => {
   return (
-    <div className=" mx-auto sm:px-6 md:px-48 py-8">
+    <div className=" mx-auto my-0 max-w-screen-2xl sm:px-6 md:px-48 py-8">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
         <div>
           <h2 className="font-bold text-lg mb-4">Icons</h2>

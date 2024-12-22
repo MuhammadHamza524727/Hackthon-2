@@ -39,12 +39,12 @@ import React from 'react'
 
 const Gearup = () => {
   return (
-    <div className=" mx-auto    px-4 py-8">
+    <div className="  mx-auto my-0 max-w-screen-2xl   px-4 py-8">
     <h1 className="text-2xl font-bold mb-6 ">Gear Up</h1>
 
-    <div className="flex justify-end items-center ">
-      <div className="w-full gap-4 flex sm:justify-center md:justify-end items-center mb-6 ">
-        <h2 className=" sm:hidden md:block text-lg font-semibold">
+    <div className="flex justify-end items-center  lg:px-8">
+      <div className="w-full md:w-[600px] lg:w-[1200px]   gap-4 flex sm:justify-center md:justify-end items-center mb-6 ">
+        <h2 className=" sm:hidden md:block  text-lg font-semibold">
           Shop Men s
         </h2>
         <h2 className=" md:hidden  sm:block text-lg font-semibold">
@@ -73,7 +73,7 @@ const Gearup = () => {
         </button>
       </div>
 
-      <div className=" sm:hidden md:flex w-full gap-4  flex justify-end  items-center mb-6">
+      <div className="  md:w-[600px] lg:w-[1200px] sm:hidden lg:px-8 md:flex w-full gap-4  flex justify-end  items-center mb-6">
         <h2 className="text-lg font-semibold">Shop Women s</h2>
         <button className="text-gray-600 hover:text-black rounded-full w-12 h-12 flex items-center justify-center  bg-gray-200">
           <span>

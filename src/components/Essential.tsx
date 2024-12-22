@@ -3,7 +3,7 @@ import React from "react";
 
 const Essential = () => {
   return (
-    <div className=" mx-auto px-4 py-8">
+    <div className="  mx-auto my-0 max-w-screen-2xl px-4 py-8">
       <h1 className="text-2xl font-bold mb-6">The Essentials</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="relative group">

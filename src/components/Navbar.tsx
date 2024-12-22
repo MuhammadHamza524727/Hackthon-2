@@ -13,22 +13,23 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="w-full font-roboto bg-customGray  shadow-sm ">
-      <div className=" mx-auto  px-4 flex  justify-between items-center md:py-3    ">
-        <div className="flex items-center sm:py-2 md:py-0 ">
+    <div  className= "w-full fixed sm:mt-[-35px] md:mt-0 z-10  mx-auto my-0 max-w-screen-2xl font-roboto bg-customGray  shadow-sm ">
+      <div  className=" mx-auto  px-4 flex  justify-between items-center md:py-3    ">
+        <div  className="flex items-center sm:py-2 md:py-0 ">
           <a href="/">
           <Image
             src="/images/logo2.png"
             alt="Jordan Logo"
             width={24}
             height={24}
+            
           />
           </a>
         </div>
         <div className="hidden md:flex space-x-2 text-sm text-gray-700 font-medium ">
-          <Link href="/checkout">Find a Store</Link>
+          <Link href="/checkout" className="hover:text-gray-400">Find a Store</Link>
           <h1>|</h1>
-          <Link href="/contactus">Help</Link>
+          <Link href="/contactus" className="hover:text-gray-400">Help</Link>
           <h1>|</h1>
           <Link href="/joinus"  className="hover:text-gray-400">Join Us</Link>
           <h1>|</h1>
@@ -77,7 +78,7 @@ const Navbar = () => {
       </div>
 
       {/* nav2 */}
-      <nav className=" hidden md:block w-full bg-white shadow-sm">
+      <nav className=" hidden md:block w-full  bg-white shadow-sm">
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
           <div className="flex items-center space-x-4">
             <Image
@@ -101,7 +102,7 @@ const Navbar = () => {
             <div className="hidden md:flex items-center bg-gray-100 px-2  py-2 rounded-full">
               <Image
                 src="/images/searchbar.png"
-                alt="Jordan Logo"
+                alt="search bar"
                 width={24}
                 height={24}
                 className="h-6 w-auto"
@@ -114,7 +115,7 @@ const Navbar = () => {
             </div>
             <Image
               src="/images/heart.png"
-              alt="Jordan Logo"
+              alt="heart"
               width={24}
               height={24}
               className="h-5 w-auto "
@@ -122,10 +123,10 @@ const Navbar = () => {
             <a href="/cart">
             <Image
               src="/images/marketplace.png"
-              alt="Jordan Logo"
+              alt="marketplace"
               width={24}
               height={24}
-              className="h-6 w-auto"
+              className="h-6 w-auto hover:h-[26px] hover:w-[26px] "
             />
             </a>
           </div>
