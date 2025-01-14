@@ -3,7 +3,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className="bg-white min-h-screen p-4">
+    <div className="md:pt-40 bg-white min-h-screen p-4">
    
     <div className=" mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
       {/* Bag Section */}

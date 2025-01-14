@@ -237,7 +237,7 @@ export default function ProductGallery() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="md:container md:pt-40 mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/4">
           <h2 className="text-xl font-bold mb-4">New (500)</h2>
@@ -300,27 +300,29 @@ export default function ProductGallery() {
           </div>
         </div>
 
-        <main className="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <main  className="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {products.map((product) => (
-            <div key={product.id} className="bg-white  p-4 w-[348px]">
+            <div key={product.id} className="bg-white  p-4 w-[348px] relative group transition-all duration-300 ease-in-out group-hover:bg-gray-200 group-hover:shadow-md ">
               <Link href="/productDetailCard">
                 <Image
                   src={product.image}
                   alt={product.name}
                   width={348}
                   height={348}
-                  className="w-[348px] h-[348px] object-cover  mb-4"
+                  className="md:w-[348px] md:h-[348px] sm:w-[150px] sm:h-[150px] object-cover  mb-4 transition-transform duration-300 ease-in-out group-hover:scale-105 
+                  "
                 />
+                
               </Link>
 
-              <p className="text-orange-600 text-sm font-semibold">
+              <p className="text-orange-600 sm:text-[12px] md:text-lg font-semibold">
                 {product.label}
               </p>
 
-              <h3 className="font-bold text-md text-black ">{product.name}</h3>
-              <p className="text-gray-600 text-sm">{product.category}</p>
-              <p className="text-gray-400 text-sm">{product.color}</p>
-              <p className="text-black font-semibold">{product.price}</p>
+              <h3 className=" sm:text-[8px] md:text-sm text-black ">{product.name}</h3>
+              <p className="text-gray-600 sm:text-[8px] md:text-sm">{product.category}</p>
+              <p className="text-gray-400 sm:text-[8px] md:text-sm">{product.color}</p>
+              <p className="text-black sm:text-[8px] md:text-sm">{product.price}</p>
             </div>
           ))}
         </main>
@@ -328,3 +330,7 @@ export default function ProductGallery() {
     </div>
   );
 }
+
+
+
+

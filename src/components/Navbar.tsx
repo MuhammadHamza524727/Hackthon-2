@@ -13,9 +13,9 @@ import {
 
 const Navbar = () => {
   return (
-    <div  className= "w-full fixed sm:mt-[-35px] md:mt-0 z-10  mx-auto my-0 max-w-screen-2xl font-roboto bg-customGray  shadow-sm ">
+    <div  className= " w-full fixed sm:mt-[-40px] md:mt-0 z-10  mx-auto my-0   bg-customGray  shadow-sm ">
       <div  className=" mx-auto  px-4 flex  justify-between items-center md:py-3    ">
-        <div  className="flex items-center sm:py-2 md:py-0 ">
+        <div  className="flex items-center sm:py-3  md:py-0 ">
           <a href="/">
           <Image
             src="/images/logo2.png"
@@ -53,7 +53,7 @@ const Navbar = () => {
                       height={24}
                     />
                   </div>
-                  <h1 className="text-md font-roboto ">Nike</h1>
+                  <h1 className="text-md  ">Nike</h1>
                   </div>
                 </SheetTitle>
                 <SheetDescription>
@@ -133,6 +133,7 @@ const Navbar = () => {
         </div>
       </nav>
     </div>
+  
   );
 };
 

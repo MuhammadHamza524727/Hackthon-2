@@ -3,9 +3,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className="flex min-h-screen justify-center items-center bg-gray-100 py-5">
+    <div  className="md:pt-40 flex min-h-screen justify-center items-center bg-gray-100 py-5" >
       {/* Card Container */}
-      <div className="w-full max-w-md bg-white p-8 shadow-md rounded-md">
+      <div data-aos="zoom-in"  className="w-full max-w-md bg-white p-8 shadow-md rounded-md">
         {/* Logo */}
         <div className="flex justify-center mb-2">
           <Image

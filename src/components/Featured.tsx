@@ -3,7 +3,7 @@ import React from "react";
 
 const Featured = () => {
   return (
-    <div className="w-full mx-auto my-0 max-w-screen-2xl px-4">
+    <div className=" w-full mx-auto my-0 max-w-screen-2xl px-4">
       <h1 className="p-x-2 text-xl sm:font-medium md:font-medium">Featured</h1>
       <Image
         src="/images/menImage.png"

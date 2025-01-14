@@ -1,4 +1,14 @@
 import Image from "next/image";
+import * as React from "react"
+
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const products = [
   {
@@ -34,96 +44,35 @@ const products = [
     category: "Women",
   },
 ];
-
-import React from 'react'
-
-const Gearup = () => {
+export function Gearup() {
   return (
-    <div className="  mx-auto my-0 max-w-screen-2xl   px-4 py-8">
-    <h1 className="text-2xl font-bold mb-6 ">Gear Up</h1>
-
-    <div className="flex justify-end items-center  lg:px-8">
-      <div className="w-full md:w-[600px] lg:w-[1200px]   gap-4 flex sm:justify-center md:justify-end items-center mb-6 ">
-        <h2 className=" sm:hidden md:block  text-lg font-semibold">
-          Shop Men s
-        </h2>
-        <h2 className=" md:hidden  sm:block text-lg font-semibold">
-          Mix Collection
-        </h2>
-
-        <button className="text-gray-600 hover:text-black rounded-full w-12 h-12 flex items-center justify-center sm:hidden md:flex  bg-gray-100">
-          <span>
-            <Image
-              src="/aeroleft.png"
-              alt="aeroleft Logo"
-              width={6.97}
-              height={13.93}
-            />
-          </span>
-        </button>
-        <button className="text-gray-700 hover:text-black rounded-full w-12 h-12 flex items-center justify-center sm:hidden md:flex  bg-gray-200">
-          <span>
-            <Image
-              src="/aeroright.png"
-              alt="aeroleft Logo"
-              width={6.97}
-              height={13.93}
-            />
-          </span>
-        </button>
-      </div>
-
-      <div className="  md:w-[600px] lg:w-[1200px] sm:hidden lg:px-8 md:flex w-full gap-4  flex justify-end  items-center mb-6">
-        <h2 className="text-lg font-semibold">Shop Women s</h2>
-        <button className="text-gray-600 hover:text-black rounded-full w-12 h-12 flex items-center justify-center  bg-gray-200">
-          <span>
-            <Image
-              src="/aeroleft.png"
-              alt="aeroleft Logo"
-              width={6.97}
-              height={13.93}
-            />
-          </span>
-        </button>
-        <button className="text-gray-700 hover:text-black rounded-full w-12 h-12 flex items-center justify-center  bg-gray-200">
-          <span>
-            <Image
-              src="/aeroright.png"
-              alt="aeroleft Logo"
-              width={6.97}
-              height={13.93}
-            />
-          </span>
-        </button>
-      </div>
-    </div>
-
-    <div className="sm:w-full grid  md:grid-cols-2 lg:grid-cols-4 gap-6  grid-cols-1  ">
-      {products.map((product) => (
-        <div key={product.id} className="flex flex-col items-center">
-          <Image
-            src={product.image}
-            alt={product.title}
-            width={300}
-            height={300}
-            className="object-cover rounded-md"
-          />
-
-          <div className="flex flex-col items-center  ">
-            <div className="flex justify-between w-full gap-4  items-center ">
-              <h3 className="text-sm font-semibold">{product.title}</h3>
-              <p className="text-sm font-medium">{product.price}</p>
+    <div>
+    <Carousel className="w-full  md:max-w-screen-lg mx-auto ">
+      <CarouselContent className="-ml-1 mx-auto  my-0 px-4 py-8">
+        {Array.from({ length: 8 }).map((_, index) => (
+          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
+            <div className="p-2">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-2">
+                    
+                  <Image
+                      src={products[index % products.length].image}
+                      alt={`Carousel Image ${index + 1}`}
+                      width={300} 
+                      height={300}
+                      className="object-cover rounded-md"
+                      priority={index === 0} // Prioritize the first image for faster loading
+                    />
+                </CardContent>
+              </Card>
             </div>
-            <p className="text-md text-gray-600 flex justify-start w-full">
-              {product.description}
-            </p>
-          </div>
-        </div>
-      ))}
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+        <CarouselPrevious className=" sm:ml-[60px] border-none opacity-50 md:flex" />
+        <CarouselNext className=" sm:mr-[60px] border-none opacity-50 md:flex" />
+    </Carousel>
     </div>
-  </div>
   )
 }
-
 export default Gearup
-

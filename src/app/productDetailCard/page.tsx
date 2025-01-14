@@ -2,15 +2,16 @@ import Image from "next/image";
 
 const ProductDetailCard = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-8 p-6 max-w-6xl mx-auto">
+    <div  className="md:pt-40 flex flex-col lg:flex-row items-center gap-8 p-6 max-w-6xl mx-auto">
       {/* Product Image */}
-      <div className="w-full lg:w-1/2 flex justify-center">
+      <div data-aos="zoom-out-up" className="w-full lg:w-1/2 flex justify-center">
         <Image
           src="/images/Rectangle2.png"
           alt="Nike Air "
           width={500}
           height={500}
           className="object-contain"
+          
         />
       </div>
 

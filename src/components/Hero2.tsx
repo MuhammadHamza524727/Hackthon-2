@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero2 = () => {
   return (
-    <div className="sm:mt-8 md:mt-0 w-full  mx-auto my-0 max-w-screen-2xl ">
+    <div className="sm:mt-8 md:mt-0  w-full  mx-auto my-0 max-w-screen-2xl ">
       <Image
         src="/images/shoes1.png"
         alt="shoess"
