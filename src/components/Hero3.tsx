@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Hero3 = () => {
@@ -15,9 +16,11 @@ const Hero3 = () => {
         <button  data-aos="zoom-in-up" className="bg-black border   hover:text-black  text-white px-6 py-3 rounded-full hover:bg-white transition">
           Notify Me
         </button>
+        <Link href="/productGallery">
         <button  data-aos="zoom-in-up" className=" bg-black border  text-white hover:text-black px-6 py-3 rounded-full hover:bg-white  transition">
           Shop Air Max
         </button>
+        </Link>
       </div>
     </div>
   );
