@@ -237,9 +237,9 @@ export default function ProductGallery() {
   ];
 
   return (
-    <div className="md:container md:pt-40 mx-auto px-4 py-8">
-      <div className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/4">
+    <div className=" md:pt-40 mx-auto px-4 py-8 ">
+      <div className=" flex flex-col sm:flex-col-reverse md:flex-row ">
+        <div className="w-full  md:w-1/5">
           <h2 className="text-xl font-bold mb-4">New (500)</h2>
           <ul className="space-y-2">
             {filters.map((filter, index) => (
@@ -251,7 +251,7 @@ export default function ProductGallery() {
               </li>
             ))}
           </ul>
-          <div className="mt-6">
+          <div className="mt-6 ">
             <h3 className="text-lg font-semibold">Gender</h3>
             <div className="space-y-2">
               <label className="flex items-center space-x-2">
@@ -300,16 +300,16 @@ export default function ProductGallery() {
           </div>
         </div>
 
-        <main  className="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <main  className="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-6  ">
           {products.map((product) => (
-            <div key={product.id} className="bg-white  p-4 w-[348px] relative group transition-all duration-300 ease-in-out group-hover:bg-gray-200 group-hover:shadow-md ">
+            <div key={product.id} className="bg-white  p-4 relative group transition-all duration-300 ease-in-out group-hover:bg-gray-200 group-hover:shadow-md ">
               <Link href="/productDetailCard">
                 <Image
                   src={product.image}
                   alt={product.name}
                   width={348}
                   height={348}
-                  className="md:w-[348px] md:h-[348px] sm:w-[150px] sm:h-[150px] object-cover  mb-4 transition-transform duration-300 ease-in-out group-hover:scale-105 
+                  className="md:w-[348px] md:h-[348px] sm:w-[120px] sm:h-[120px] object-cover  mb-4 transition-transform duration-300 ease-in-out group-hover:scale-105 
                   "
                 />
                 
