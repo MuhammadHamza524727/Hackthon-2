@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import Hero2 from "@/components/Hero2";
 import Hero3 from "@/components/Hero3";
 import AirMaxSection from "@/components/AirMaxSection";
-import ProductGrid from "@/components/ProductGrid";
 import Featured from "@/components/Featured";
 import Gearup from "@/components/Gearup";
 import Jordanspring from "@/components/Jordanspring";
@@ -13,7 +12,9 @@ import CategoryLinks from "@/components/CategoryLinks";
 import AOS from "aos" 
 import { useEffect } from "react";
 
-export default function Home() {
+
+
+export default  function Home() {
   useEffect (() => {
 
     AOS.init({
@@ -34,7 +35,7 @@ export default function Home() {
       <Hero2 />
       <Hero3 />
       <AirMaxSection />
-      <ProductGrid />
+      
       <Featured />
       <Gearup />
       <Jordanspring />

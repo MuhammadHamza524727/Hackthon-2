@@ -1,0 +1,10 @@
+4. API Endpoints
+Endpoint	Method	Purpose	Response Example			
+/properties	GET	Fetches all available properties	[{ "_id": "1", "name": "Cozy Apartment", "pricePerNight": 100 }, ...]			
+/properties/:propertyId	GET	Fetches details of a specific property	{ "_id": "1", "name": "Cozy Apartment", "description": "...", ... }			
+/properties/search	GET	Searches for properties based on filters	[{ "_id": "2", "name": "Modern House", ... }, ...]			
+/bookings	POST	Creates a new booking request	{ "bookingId": "123", "status": "Pending" }			
+/bookings/:bookingId	GET	Fetches details of a specific booking	{ "_id": "123", "property": { "_ref": "ref(property.1)" }, ... }			
+/bookings/:bookingId/status	PUT	Updates the status of a booking	{ "status": "Confirmed" }			
+/payments	POST	Processes a payment	{ "paymentId": "abc", "status": "Success" }			
+

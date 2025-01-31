@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-const page = () => {
+const Checkout = () => {
   return (
-    <div className= "md:pt-40 bg-white   min-h-screen">
+    <div className= "md:pt-10 bg-white   min-h-screen">
       {/* Main Container */}
       <div className=" mx-auto px-4 md:px-64 py-6 lg:flex lg:space-x-8">
         {/* Left Section: User Details */}
@@ -208,9 +208,4 @@ const page = () => {
   )
 }
 
-export default page
-
-
-
-
-
+export default Checkout

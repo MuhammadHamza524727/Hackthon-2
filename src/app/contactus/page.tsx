@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="md:pt-40 min-h-screen bg-white text-black">
+    <div className="md:pt-10 min-h-screen bg-white text-black">
       {/* Header */}
       <header className=" py-3 text-center flex justify-center items-center flex-col">
         <h1 className="text-2xl font-semibold">GET HELP</h1>

@@ -1,26 +1,62 @@
+// {
+//   "compilerOptions": {
+//     "lib": ["dom", "dom.iterable", "esnext"],
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "noEmit": true,
+//     "esModuleInterop": true,
+//     "module": "esnext",
+//     "moduleResolution": "bundler",
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "jsx": "preserve",
+//     "incremental": true,
+//     "plugins": [
+//       {
+//         "name": "next"
+//       }
+//     ],
+//     "paths": {
+//       "@/*": ["./src/*"]
+//     }
+//   },
+//   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/productGalleryApi", "next.config.mjs"],
+//   "exclude": ["node_modules"]
+// }
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "target": "esnext", // Ensure compatibility with modern JavaScript
+    "lib": ["dom", "dom.iterable", "esnext"], // DOM and ESNext features
+    "allowJs": true, // Allow importing JavaScript files
+    "skipLibCheck": true, // Skip type checking in libraries
+    "strict": true, // Enable strict type checking
+    "noEmit": true, // Do not emit any output files
+    "esModuleInterop": true, // Enable compatibility with CommonJS
+    "module": "esnext", // Use ESNext module system
+    "moduleResolution": "bundler", // Ensure modern module resolution
+    "resolveJsonModule": true, // Allow importing JSON files
+    "isolatedModules": true, // Optimize module handling
+    "jsx": "preserve", // Preserve JSX syntax
+    "incremental": true, // Enable incremental builds
     "plugins": [
       {
-        "name": "next"
+        "name": "next" // Enable Next.js-specific TypeScript support
       }
     ],
+    "baseUrl": ".", // Base path for resolving modules
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"], // Alias for cleaner imports
+      "@/sanity/*": ["./src/sanity/*"], // Sanity-specific path alias
+      "@/types/*": ["./src/types/*"] // Types directory alias
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts", // Ensure Next.js type definitions are included
+    "**/*.ts", // Include all TypeScript files
+    "**/*.tsx", // Include all TSX files
+    ".next/types/**/*.ts", // Include Next.js types
+    "src/**/*" // Ensure all files in the src directory are included
+, "src/app/product"  ],
+  "exclude": ["node_modules"] // Exclude unnecessary directories
 }

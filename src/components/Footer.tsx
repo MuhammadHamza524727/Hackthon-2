@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer data-aos="fade-up"
+    <footer 
     data-aos-duration="3000" className="bg-black mx-auto my-0 max-w-screen-2xl  text-gray-100">
       <div className=" mx-auto px-4 py-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">

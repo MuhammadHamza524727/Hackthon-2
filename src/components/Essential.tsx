@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Essential = () => {
@@ -9,34 +10,38 @@ const Essential = () => {
         <div className="relative group">
           <Image
             src="/images/mens-essentials.png"
-            alt="Men's Essentials"
-            layout="responsive"
+            alt="Men Essentials"
+            // layout="responsive"
             width={500}
             height={400}
             className="object-cover rounded-md"
           />
+          <Link href="/menproducts">
           <button className="absolute  bottom-4 left-4 bg-white text-sm px-4 py-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition">
-            Men s
+            Men&apos;s
           </button>
+          </Link>
         </div>
         <div className="relative group">
           <Image
             src="/images/womens-essentials.png"
-            alt="Women's Essentials"
-            layout="responsive"
+            alt="Women Essentials"
+            // layout="responsive"
             width={500}
             height={400}
             className="object-cover rounded-md"
           />
+          <Link href="/womenproducts">
           <button className="absolute bottom-4 left-4 bg-white text-sm px-4 py-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition">
-            Women s
+            Women&apos;s
           </button>
+          </Link>
         </div>
         <div className="relative group">
           <Image
             src="/images/kids-essentials.png"
-            alt="Kids' Essentials"
-            layout="responsive"
+            alt="Kids Essentials"
+            // layout="responsive"
             width={500}
             height={400}
             className="object-cover rounded-md"

@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div  className="md:pt-40 flex justify-center items-center min-h-screen bg-gray-100 px-4 py-5">
+    <div  className="md:pt-10 flex justify-center items-center min-h-screen bg-gray-100 px-4 py-5">
       {/* Card Container */}
       <div data-aos="zoom-in" className="w-full max-w-md bg-white p-6 shadow-md rounded-md">
         {/* Logo */}
@@ -70,6 +70,7 @@ const page = () => {
             className="w-full mb-3 px-4 py-2 border rounded-md focus:ring-2 focus:ring-black outline-none"
             defaultValue="India"
           >
+             <option>Pakistan</option>
             <option>India</option>
             <option>United States</option>
             <option>United Kingdom</option>
