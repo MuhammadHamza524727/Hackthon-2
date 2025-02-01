@@ -1,15 +1,13 @@
-"use client";
-import { addToCart } from "@/cart/cart";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { groq } from "next-sanity";
 import Image from "next/image";
 import Link from "next/link";
 import { Product } from "types/products";
-import Swal from "sweetalert2";
+import AddToCartButton from "@/components/ui/AddToCartButton"; // Client component ko import karo
 
-interface productPageProps {
-  params: Promise<{ slug: string }>;
+interface ProductPageProps {
+  params: { slug: string };
 }
 
 async function getProduct(slug: string): Promise<Product> {
@@ -26,35 +24,21 @@ async function getProduct(slug: string): Promise<Product> {
         image,
         description,
         _type
-        }`,
+    }`,
     { slug }
   );
 }
-export default async function ProductPage({ params }: productPageProps) {
-  const { slug } = await params;
+
+export default async function ProductPage({ params }: ProductPageProps) {
+  const { slug } = params;
   const product = await getProduct(slug);
 
-  // add to cart
-
-  const handleAddToCart = (e: React.MouseEvent, product: Product) => {
-    e.preventDefault();
-    Swal.fire({
-      position: "top-end",
-      icon: "success",
-      title: `${product.productName} added to cart`,
-      showConfirmButton: false,
-      timer: 1000,
-    });
-    addToCart(product);
-  };
+  if (!product) return <p>Product not found</p>;
 
   return (
     <div className="md:pt-10 flex flex-col lg:flex-row items-center gap-8 p-6 max-w-6xl mx-auto">
       {/* Product Image */}
-      <div
-        data-aos="zoom-out-up"
-        className="w-full lg:w-1/2 flex justify-center"
-      >
+      <div data-aos="zoom-out-up" className="w-full lg:w-1/2 flex justify-center">
         <Image
           src={urlFor(product.image).url()}
           alt={product.productName}
@@ -69,25 +53,9 @@ export default async function ProductPage({ params }: productPageProps) {
         <h1 className="text-3xl font-bold">{product.productName}</h1>
         <p className="text-gray-600">{product.description}</p>
         <p className="text-2xl font-bold">₹ {product.price}</p>
-        <Link href="/cart">
-          <button
-            className="bg-black text-white py-3 px-6 rounded-3xl w-48 flex items-center gap-2 hover:bg-gray-800"
-            onClick={(e) => handleAddToCart(e, product)}
-          >
-            <span className="material-icons">
-              {product.image && (
-                <Image
-                  src="/images/cart.png"
-                  alt={product.productName}
-                  width={22.36}
-                  height={16.3}
-                />
-              )}
-            </span>
-            Add To Cart
-          </button>
-        </Link>
-       
+        
+        {/* Client Component for Add To Cart Button */}
+        <AddToCartButton product={product} />
       </div>
     </div>
   );

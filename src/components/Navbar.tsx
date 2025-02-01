@@ -310,7 +310,7 @@ const Navbar = () => {
 
           {/* Main Links (Desktop view) */}
           <div className="hidden md:flex items-center space-x-7 ml-4 text-md font-medium text-gray-800">
-            <Link href="/productGalleryApi" className="hover:text-gray-400">
+            <Link href="/productgalleryapi" className="hover:text-gray-400">
               New & Featured
             </Link>
             <Link href="/menproducts">Men</Link>
